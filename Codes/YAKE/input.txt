@@ -1,0 +1,1 @@
+[YAKE is an algorithm for keyword extraction that aims to identify the most relevant keywords in a given text. It stands for "Yet Another Keyword Extractor". This Python code demonstrates how to use the YAKE library for extracting keywords from a text.]
