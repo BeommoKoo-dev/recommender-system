@@ -22,5 +22,8 @@ for i in range(n_words):
     keyword, score = random.choice(keywords)
     extracted.append((keyword, score))
 
+keyList = []
 for keyword, score in extracted:
-    print(f"Keyword: {keyword}, Score: {score}")
+    keyList.append(keyword)
+
+print(keyList)

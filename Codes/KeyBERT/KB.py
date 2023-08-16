@@ -4,7 +4,13 @@ fin = open("test1.txt", "r")
 
 summary = fin.readlines()
 
-kw_model = KeyBERT()
-keywords = kw_model.extract_keywords(summary)
+wordCount = 10
 
-print(keywords)
+kw_model = KeyBERT()
+keywords = kw_model.extract_keywords(summary, top_n=wordCount)
+
+keyList = []
+for keyword in keywords:
+    keyList.append(keyword[0])
+
+print(keyList)
