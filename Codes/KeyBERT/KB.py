@@ -2,7 +2,7 @@ from keybert import KeyBERT
 import csv
 
 # User Parameters
-wordCount = 10  # How many keywords
+wordCount = 20  # How many keywords
 
 # Models and Lists
 kw_model = KeyBERT()
@@ -31,7 +31,7 @@ for row in rows[1:]:
     row.append(newList)
 
 # Writing .csv
-with open('movies_test.csv', 'w', newline='') as file:
+with open('keyword_extraction.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerows(rows)
 
